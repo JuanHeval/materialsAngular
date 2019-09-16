@@ -1,0 +1,12 @@
+<h1>---Separador---</h1>
+<mat-form-field>
+        <mat-label>Selecione una opción</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option>Ninguna</mat-option>
+          <mat-option value="Desarrollar">Desarrollar</mat-option>
+          <mat-option value="Diseñar">Diseñar</mat-option>
+          <mat-option value="Ambas">Ambas</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <p>Seleccionó: {{selected}}</p>

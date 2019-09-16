@@ -1,0 +1,14 @@
+<h1>---Separador---</h1>
+<form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" [formControl]="emailFormControl"
+                 [errorStateMatcher]="matcher">
+          <mat-hint>El error va a aparecer</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Por favor ingrese un email válido
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email es <strong>requerido</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>
